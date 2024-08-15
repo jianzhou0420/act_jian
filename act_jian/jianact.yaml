@@ -1,0 +1,31 @@
+backbone: 'resnet18'
+batch_size: 8
+camera_names: ['left_shoulder', 'right_shoulder', 'wrist', 'front', 'overhead']
+chunk_size: 200
+ckpt_dir:
+clip_max_norm: 0.1
+dec_layers: 7
+dilation: False
+dim_feedforward: 3200
+dropout: 0.1
+enc_layers: 4
+epochs: 300
+eval: False
+hidden_dim: 512
+kl_weight: 10
+lr: 0.00001
+lr_backbone: 0.00001
+lr_drop: 200
+masks: False
+nheads: 8
+num_epochs: 2000
+num_queries: 200
+policy_class: 'ACT'
+position_embedding: 'sine'
+pre_norm: False
+seed: 0
+task_name: 'close_jar'
+temporal_agg: True
+weight_decay: 0.0001
+action_dim: 8
+
